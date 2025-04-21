@@ -65,4 +65,5 @@ jobs:
           git config --global user.name "SIKANDERKUMBHAR"
           git add manifest/backend/deployment.yaml manifest/frontend/deployment.yaml
           git commit -m "Update manifests with version ${{ env.VERSION }}"
-          git push
+          git remote set-url origin https://github-actions:${{ secrets.GITHUB_TOKEN }}@github.com/SIKANDERKUMBHAR/genai-project-argocd/.git
+          git push origin main
