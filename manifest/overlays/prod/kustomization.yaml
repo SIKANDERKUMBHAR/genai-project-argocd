@@ -1,0 +1,13 @@
+namePrefix: prod-
+namespace: prod
+
+resources:
+  - ../../base
+
+patches:
+  - target:
+      kind: Deployment
+    patch: |
+      - op: replace
+        path: /spec/replicas
+        value: 3

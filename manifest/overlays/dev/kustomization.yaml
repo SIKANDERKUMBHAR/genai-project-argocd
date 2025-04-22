@@ -1,0 +1,13 @@
+namePrefix: dev-
+namespace: dev
+
+resources:
+  - ../../base
+
+patches:
+  - target:
+      kind: Deployment
+    patch: |
+      - op: replace
+        path: /spec/replicas
+        value: 1
