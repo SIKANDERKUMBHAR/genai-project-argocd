@@ -63,7 +63,7 @@ jobs:
         run: |
           git config --global user.email "sikanderalikumbhar1@gmail.com"
           git config --global user.name "SIKANDERKUMBHAR"
-          git add manifest/backend/deployment.yaml manifest/frontend/deployment.yaml
+          git add manifest/base/backend/deployment.yaml manifest/base/frontend/deployment.yaml
           git commit -m "Update manifests with version ${{ env.VERSION }}"
           git remote set-url origin https://github-actions:${{ secrets.GITHUB_TOKEN }}@github.com/SIKANDERKUMBHAR/genai-project-argocd.git
           git push origin main
