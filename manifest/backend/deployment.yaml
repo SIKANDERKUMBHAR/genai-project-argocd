@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: sikanderali/backend:v20250421190413
+          image: sikanderali/backend:v20250422083312
           ports:
             - containerPort: 8000
           env:
