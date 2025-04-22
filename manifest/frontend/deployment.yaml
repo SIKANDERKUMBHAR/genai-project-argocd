@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sikanderali/frontend:v20250422105848
+          image: sikanderali/frontend:v20250422153746
           ports:
             - containerPort: 3000
           env:
