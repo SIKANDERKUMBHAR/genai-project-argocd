@@ -51,12 +51,12 @@ jobs:
       # Update Backend K8s Manifest
       - name: Update Backend Deployment
         run: |
-          sed -i "s|image: .*/backend:.*|image: $IMAGE_BACKEND:${{ env.VERSION }}|g" manifest/backend/deployment.yaml
+          sed -i "s|image: .*/backend:.*|image: $IMAGE_BACKEND:${{ env.VERSION }}|g" manifest/base/backend/deployment.yaml
 
       # Update Frontend K8s Manifest
       - name: Update Frontend Deployment
         run: |
-          sed -i "s|image: .*/frontend:.*|image: $IMAGE_FRONTEND:${{ env.VERSION }}|g" manifest/frontend/deployment.yaml
+          sed -i "s|image: .*/frontend:.*|image: $IMAGE_FRONTEND:${{ env.VERSION }}|g" manifest/base/frontend/deployment.yaml
 
       # Commit changes to Git
       - name: Commit and Push Updated Manifests
