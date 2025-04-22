@@ -6,4 +6,3 @@ namespace: my-app
 resources:
   - deployment.yaml
   - service.yaml
-  - sealed-secret.yaml
