@@ -54,15 +54,6 @@ manifest/       # K8s manifests with Kustomize (base + overlays)
 ---
 
 
----
-
-## 🧪 Future Improvements
-
-- Add monitoring with Prometheus + Grafana
-- Use Helm for reusable charts
-- Add CI tests
-
----
 
 ## 👨‍💻 Author
 
